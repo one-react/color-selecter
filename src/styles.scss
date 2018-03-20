@@ -1,0 +1,41 @@
+@import "~or-theme";
+
+.#{$prefix}-color-selecter-wrapper {
+  display: flex;
+  .#{$prefix}-color-selecter {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    background-color: $white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $gray3;
+    cursor: pointer;
+
+    &.small {
+      width: 20px;
+      height: 20px;
+      padding: 2px;
+
+      .inner-color {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &.active {
+      border-color: $black;
+    }
+
+    .inner-color {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+  }
+
+  .#{$prefix}-color-selecter + .#{$prefix}-color-selecter {
+    margin-left: 10px;
+  }
+}
