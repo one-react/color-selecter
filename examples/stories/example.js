@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from 'or-button'
 
+import './example.scss'
+
 import {ColorSelecter} from '../../src'
 
 const colorMap1 = {

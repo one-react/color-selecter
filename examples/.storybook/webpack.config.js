@@ -1,11 +1,23 @@
 const path = require('path')
+const fs = require('fs')
+const themeFilePath = path.resolve(__dirname, './theme.scss')
+const themeStr = fs.readFileSync(themeFilePath, { encoding: 'utf-8' })
 
 module.exports = {
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              data: themeStr
+            }
+          }
+        ],
       },
       {
         test: /\.jsx?$/,
