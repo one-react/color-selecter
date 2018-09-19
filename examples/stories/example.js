@@ -34,6 +34,7 @@ class Example extends React.Component {
   render () {
     return (
       <div className='example'>
+        <h1>Small size:</h1>
         <div className='titile'><span className='text'>Color</span><span className='color'>{colorMap1[this.state.color1]}</span></div>
         <ColorSelecter
           size='small'
@@ -41,6 +42,7 @@ class Example extends React.Component {
           colors={colors1}
           onChange={this.handleChange1} />
         <Button onClick={this.handleSubmit1}>ADD TO BAG</Button>
+        <h1>Normal size:</h1>
         <div className='titile'><span className='text'>Color</span><span className='color'>{colorMap2[this.state.color2]}</span></div>
         <ColorSelecter
           selected={this.state.color2}
