@@ -1,10 +1,10 @@
 @import "~or-theme";
 
-.#{$prefix}-color-selecter-wrapper {
+.or-color-selecter-wrapper {
   display: flex;
   font-family: $font-family;
 
-  .#{$prefix}-color-selecter {
+  .or-color-selecter {
     width: 25px;
     height: 25px;
     padding: 3px;
@@ -15,30 +15,30 @@
     border-color: $gray3;
     cursor: pointer;
 
-    &.small {
+    &.or-color-selecter-small {
       width: 20px;
       height: 20px;
       padding: 2px;
 
-      .inner-color {
+      .or-inner-color {
         width: 20px;
         height: 20px;
       }
     }
 
-    &.active {
+    &.or-color-selecter-active {
       border-color: $black;
       transition: all .25s ease-in-out;
     }
 
-    .inner-color {
+    .or-inner-color {
       width: 25px;
       height: 25px;
       border-radius: 50%;
     }
   }
 
-  .#{$prefix}-color-selecter + .#{$prefix}-color-selecter {
+  .or-color-selecter + .or-color-selecter {
     margin-left: 10px;
   }
 }
