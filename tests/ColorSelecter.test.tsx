@@ -1,7 +1,7 @@
 import { mount } from 'enzyme'
 import React, { PureComponent } from 'react'
 
-import { ColorSelecter } from '../src'
+import ColorSelecter from '../src'
 
 const colorMap = {
   '#F3AA02': 'Cassia',

@@ -1,2 +1,2 @@
 import './styles.scss'
-export { ColorSelecter } from './ColorSelecter'
+export { ColorSelecter as default } from './ColorSelecter'
