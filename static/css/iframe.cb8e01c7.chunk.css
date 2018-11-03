@@ -1,0 +1,50 @@
+.or-color-selecter-wrapper {
+  display: flex;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .or-color-selecter-wrapper .or-color-selecter {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BDBDBD;
+    cursor: pointer; }
+    .or-color-selecter-wrapper .or-color-selecter.or-color-selecter-small {
+      width: 20px;
+      height: 20px;
+      padding: 2px; }
+      .or-color-selecter-wrapper .or-color-selecter.or-color-selecter-small .or-inner-color {
+        width: 20px;
+        height: 20px; }
+    .or-color-selecter-wrapper .or-color-selecter.or-color-selecter-active {
+      border-color: #000;
+      transition: all .25s ease-in-out; }
+    .or-color-selecter-wrapper .or-color-selecter .or-inner-color {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%; }
+  .or-color-selecter-wrapper .or-color-selecter + .or-color-selecter {
+    margin-left: 10px; }
+
+.example {
+  font-family: Helvetica W01,sans-serif; }
+  .example .titile {
+    font-size: 14px;
+    font-family: adobe-garamond-pro,serif;
+    margin: 20px 0 10px; }
+  .example .text {
+    color: #6e6e6e; }
+  .example .color-text {
+    padding-left: 10px;
+    color: #000; }
+  .example .or-btn {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 10px; }
+    .example .or-btn:hover {
+      background-color: #212121; }
+
+
+/*# sourceMappingURL=iframe.cb8e01c7.chunk.css.map*/
