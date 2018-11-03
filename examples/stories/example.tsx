@@ -1,7 +1,7 @@
 import Button from 'or-button'
 import React, { PureComponent } from 'react'
 
-import { ColorSelecter } from '../../src'
+import ColorSelecter from 'or-color-selecter'
 
 const colorMap1 = {
   '#F3AA02': 'Cassia',
@@ -23,7 +23,7 @@ const colorMap2 = {
 const colors1 = Object.keys(colorMap1)
 const colors2 = Object.keys(colorMap2)
 
-export class Example extends PureComponent {
+export default class Example extends PureComponent {
   state = {
     color1: colors1[1],
     color2: colors2[0]
@@ -43,7 +43,7 @@ export class Example extends PureComponent {
           colors={colors1}
           onChange={this.handleChange('color1')}
         />
-        <Button onClick={this.handleSubmit}>ADD TO BAG</Button>
+        <Button onClick={this.handleSubmit(1)}>ADD TO BAG</Button>
         <h1>Normal size:</h1>
         <div className="titile">
           <span className="text">Color</span>
@@ -54,7 +54,7 @@ export class Example extends PureComponent {
           colors={colors2}
           onChange={this.handleChange('color2')}
         />
-        <Button onClick={this.handleSubmit}>ADD TO BAG</Button>
+        <Button onClick={this.handleSubmit(2)}>ADD TO BAG</Button>
       </div>
     )
   }
@@ -67,8 +67,11 @@ export class Example extends PureComponent {
     }
   }
 
-  handleSubmit = () => {
-    const value1 = colorMap1[this.state.color1]
-    const value2 = colorMap2[this.state.color2]
+  handleSubmit = colorKey => {
+    return () => {
+      colorKey === 1
+        ? alert('Add:\t' + colorMap1[this.state.color1])
+        : alert('Add:\t' + colorMap2[this.state.color2])
+    }
   }
 }
