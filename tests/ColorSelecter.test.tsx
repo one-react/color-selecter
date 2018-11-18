@@ -14,10 +14,10 @@ const colors = Object.keys(colorMap)
 
 const mockCallBack = jest.fn()
 describe('src/index', () => {
-  describe('ColorSelecter: custom classname', () => {
+  describe('ColorSelecter: custom className', () => {
     const wrapper = mount(
       renderColorSelecter({
-        classname: 'hello'
+        className: 'hello'
       })
     )
     it('should render properly', () => {
