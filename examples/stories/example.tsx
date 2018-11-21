@@ -50,6 +50,7 @@ export default class Example extends PureComponent {
           <span className="color-text">{colorMap2[this.state.color2]}</span>
         </div>
         <ColorSelecter
+          className="hello"
           value={this.state.color2}
           colors={colors2}
           onChange={this.handleChange('color2')}

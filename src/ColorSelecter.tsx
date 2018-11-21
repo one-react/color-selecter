@@ -3,9 +3,9 @@ import React, { PureComponent } from 'react'
 
 interface Props {
   /**
-   * custom classname for color selecter
+   * custom className for color selecter
    */
-  classname?: string
+  className?: string
 
   /**
    * size for color selecter
@@ -31,7 +31,7 @@ interface Props {
 
 export class ColorSelecter extends PureComponent<Props, {}> {
   render() {
-    const { colors, value, size = 'normal', classname } = this.props
+    const { colors, value, size = 'normal', className } = this.props
     return (
       <div className="or-color-selecter-wrapper">
         {colors.map(color => {
@@ -41,7 +41,7 @@ export class ColorSelecter extends PureComponent<Props, {}> {
               'or-color-selecter-active': value === color
             },
             'or-color-selecter',
-            classname
+            className
           )
           return (
             <div

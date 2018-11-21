@@ -1,18 +1,20 @@
 @import "~or-theme";
 
+$or-color-selecter-default-border: $or-gray3 !default;
+
 .or-color-selecter-wrapper {
   display: flex;
-  font-family: $font-family;
+  font-family: $or-font-family;
 
   .or-color-selecter {
     width: 25px;
     height: 25px;
     padding: 3px;
-    background-color: $white;
+    background-color: white;
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
-    border-color: $gray3;
+    border-color: $or-color-selecter-default-border;
     cursor: pointer;
 
     &.or-color-selecter-small {
@@ -27,7 +29,7 @@
     }
 
     &.or-color-selecter-active {
-      border-color: $black;
+      border-color: black;
       transition: all .25s ease-in-out;
     }
 
